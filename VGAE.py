@@ -16,7 +16,6 @@ Dataset = 'ATT'
 Classification = True
 Clustering = False
 t_SNE = False
-scale = 0
 ########################################## hyper-parameters##############################################################
 Epoch_Num = 200
 Learning_Rate = 5*1e-4
@@ -45,11 +44,6 @@ else:
 ################################################## convolution_kernel ##############################################
 convolution_kernel = Convolution_Kernel(Adjacency_Matrix)
 Adjacency_Convolution = convolution_kernel.Adjacency_Convolution()
-############################################# is incomplate ############################################################
-if scale != 0:
-    ck = Convolution_Kernel(Adjacency_Matrix)
-    Adjacency_Matrix = ck.Adjacency_Incomplete(scale)
-    print("The incompleteness of the adjacency matrix is {}%".format(scale*100))
 ############################################ Results  Initialization ###################################################
 ACC_VGAE_total = []
 NMI_VGAE_total = []
@@ -60,15 +54,9 @@ NMI_VGAE_total_STD = []
 PUR_VGAE_total_STD = []
 
 F1_score = []
-#################################################### Weight initialization  ###################################################
-weight_mask = Adjacency_Matrix.view(-1) == 1
-weight_tensor = torch.ones(weight_mask.size(0))
-pos_weight = float(Adjacency_Matrix.shape[0] * Adjacency_Matrix.shape[0] - Adjacency_Matrix.sum()) / Adjacency_Matrix.sum()
-weight_tensor[weight_mask] = 80
-
 #######################################################  Loss Function #################################################
 def Loss_Function(Graph_Reconstruction, Graph_Raw, H_2_mean, H_2_std):
-    bce_loss = torch.nn.BCELoss(size_average=False, weight = weight_tensor)
+    bce_loss = torch.nn.BCELoss(size_average=False)
     Reconstruction_Loss = bce_loss(Graph_Reconstruction.view(-1), Graph_Raw.view(-1))
     KL_Divergence = -0.5 / Adjacency_Matrix.size(0) * (1 + 2 * H_2_std - H_2_mean ** 2 - torch.exp(H_2_std) ** 2).sum(1).mean()
     return Reconstruction_Loss, KL_Divergence
