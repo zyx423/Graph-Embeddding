@@ -1,7 +1,8 @@
 # GAE-and-VGAE
 Task: graph embedding for clustering and classification
 
-Requirement: Ptthon 3.7, Pytorch: 1.5,
+Requirement: Ptthon 3.7, Pytorch: 1.5 and other pakeages which is illustrated in the code.
+And the codes can be runned in the windows.
 
 
 This is a code file containing the graph autoencoders (GAE) and variational graph autoencoder （VAE).
