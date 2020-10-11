@@ -130,6 +130,7 @@ if Clustering:
     print("The incompleteness of the adjacency matrix is {}%".format(scale * 100))
 
 elif Classification:
+    Index_MAX = np.argmax(F1_score)
     print("VGAE: F1-score_max is {:.2f}".format(100 * np.max(F1_score)))
 ########################################################### t- SNE #################################################
 if t_SNE:
