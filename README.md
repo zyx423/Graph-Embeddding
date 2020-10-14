@@ -1,4 +1,5 @@
 # GAE-and-VGAE
+This is the implementation of paper 'Variational Graph Auto-Encoder' in NIPS Workshop on Bayesian Deep Learning, 2016. 
 0、This is my reproduced Graph AutoEncoder （GAE） and variational Graph AutoEncoder (VGAE) by the Pytorch. If you find any errors or questions, please tell me.
 
 1、Task: Unsupervised dimensionality reduction for clustering， classification， and Visualization
