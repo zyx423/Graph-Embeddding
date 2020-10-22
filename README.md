@@ -3,9 +3,9 @@ This is the implementation of paper 'Variational Graph Auto-Encoder' in NIPS Wor
 
 0. This is my reproduced Graph AutoEncoder （GAE） and variational Graph AutoEncoder (VGAE) by the Pytorch. If you find any errors or questions, please tell me.
 
-1. Task: Unsupervised dimensionality reduction for clustering， classification， and Visualization
+1. Task: Unsupervised graph embedding for clustering， classification， and Visualization
 
-2. 
+2. Algorithms used in the tasks:
 Clustering： k-means; 
 Classification: SVM; 
 Visualization: t-SNE;
