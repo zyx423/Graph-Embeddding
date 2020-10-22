@@ -80,7 +80,7 @@ for epoch in range(Epoch_Num):
     if Classification and (epoch + 1) % 5 == 0:
         print("Epoch:{},Loss:{:.4f}".format(epoch + 1, loss.item()))
         score = mySVM(Latent_Representation, Labels, scale=0.3)
-        print("Epoch[{}/{}], scale = {}".format(epoch + 1, Epoch_Num, score))
+        print("Epoch[{}/{}], score = {}".format(epoch + 1, Epoch_Num, score))
         F1_score.append(score)
 
     elif Clustering and (epoch + 1) % 5 == 0:
