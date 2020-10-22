@@ -6,9 +6,10 @@ This is the implementation of paper 'Variational Graph Auto-Encoder' in NIPS Wor
 1. Task: Unsupervised graph embedding for clustering， classification， and Visualization
 
 2. Algorithms used in the tasks:
-Clustering： k-means; 
-Classification: SVM; 
-Visualization: t-SNE;
+
+      Clustering： k-means; 
+      Classification: SVM; 
+      Visualization: t-SNE;
 
 3. Requirement: Ptthon 3.7, Pytorch: 1.5 and other pakeages which is illustrated in the code. And the codes can be runned in the windows.
 
