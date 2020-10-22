@@ -7,7 +7,7 @@ This is the implementation of paper 'Variational Graph Auto-Encoder' in NIPS Wor
 
 2. Algorithms used in the tasks:
 
-      Clustering： k-means; 
+      Clustering：k-means; 
       Classification: SVM; 
       Visualization: t-SNE;
 
