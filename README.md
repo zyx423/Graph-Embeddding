@@ -3,12 +3,13 @@ This is the implementation of paper 'Variational Graph Auto-Encoder' in NIPS Wor
 
 1. This is my reproduced Graph AutoEncoder （GAE） and variational Graph AutoEncoder (VGAE) by the Pytorch. If you find any errors or questions, please tell me.
 
-2. There are three tasks used to evaluate the effect of graph embedding, i.e., node clustering, node classification, and graph Visualization.
+2. There are four tasks used to evaluate the effect of graph embedding, i.e., node clustering, node classification, link_prediction, and graph Visualization.
 
 3. Algorithms used in the tasks:
 
       Clustering：k-means; 
       Classification: SVM; 
+      Link_Prediction;
       Visualization: t-SNE;
 
 4. Requirement: Python 3.7, Pytorch: 1.5 and other pakeages which is illustrated in the code. And the codes can be runned in the windows.
