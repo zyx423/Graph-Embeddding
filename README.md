@@ -17,3 +17,5 @@ These are the graph embedding methods that I reproduce.
 * **LGAE_LVGAE:** G. Salha, R. Hennequin, and   M. Vazirgiannis, "Keep it simple: Graph autoencoders without graph  convolutional networks," arXiv preprint arXiv:1910.00942, 2019.
 * **SDNE:** D. Wang, P. Cui, and W. Zhu,  "Structural deep network embedding," in Proc. IEEE Conf. Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and
   data mining, 2016, pp. 1225-1234.
+  
+4. If you think my code is useful to you, please give me a little star, thank you
