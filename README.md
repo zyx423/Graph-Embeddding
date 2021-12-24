@@ -11,7 +11,13 @@ These are the graph embedding methods that I reproduce.
    
 3. There are two types of datasets: graph datasets(cora, citeseer, pubmed) and no-graph datasets(att,imm,umist,orl).   If you want to use other datasets, you just need to put your dataset in the "Dataset" folder.   The adjacency matrix for the no-graph datasets is calculated by the KNN (k=9).
 
-3. The reproduced algorithm for paper is as follows:
+3. There are three classical graph datasets (cite, citeseer, pubmed) for the graph convolution network(GNNs). 
+Besides, some figures datasets such ATT, COIL and IMM are also included in this file. 
+Moreover, I don't only provide the datasets but also offer the methods to preprocess those datasets.
+These datasets can be used for many tasks such as clustering, classification and Link prediction, etc. 
+The datasets and methods are useful and friendly to the beginners.
+
+4. The reproduced algorithm for paper is as follows:
 
 * **GAE_VGAE:** T. N. Kipf, M. Welling, "Variational graph auto-encoders," arXiv preprint arXiv:1611.07308, 2016.
 * **LGAE_LVGAE:** G. Salha, R. Hennequin, and   M. Vazirgiannis, "Keep it simple: Graph autoencoders without graph  convolutional networks," arXiv preprint arXiv:1910.00942, 2019.
