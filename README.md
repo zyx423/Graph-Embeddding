@@ -2,7 +2,7 @@ These are the graph embedding methods that I reproduce.
 
 1. There are four tasks used to evaluate the effect of embeddings, i.e., node clustering, node classification, link_prediction,  and graph Visualization. Algorithms used in the tasks:
 
-* &nbsp Clustering：k-means;
+* Clustering：k-means;
 * Classification: SVM;
 * Link_Prediction;
 * Visualization: t-SNE;
