@@ -1,1 +1,1 @@
-The three data sets here are all processed and can be used directly.
+There are three data sets that are all processed and can be used directly.
